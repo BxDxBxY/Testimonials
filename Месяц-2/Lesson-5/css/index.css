@@ -1,0 +1,111 @@
+*{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: '', sans-serif;
+    
+}
+:root{
+    --color-text1: #DBDBDB; 
+    --color-text2: #FFDCF5; 
+    --color-text3: #000; 
+    --color-text4:  #8F0365; 
+    --color-text5: #D40597; 
+    --color-text6: #AAAAAA; 
+    --color-text7: ; 
+    --color-text8: #fff; 
+    --color-text9: ;
+    --color-text10: ;
+}
+.hw1 {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;   
+}
+@keyframes example {
+    0%   {background-color: red; left:0px; top:0px;}
+    25%  {background-color: blue; left:0px; top:200px;}
+    50%  {background-color: green; left:200px; top:200px;}
+    75%  {background-color: yellow; left:200px; top:0px;}
+    100% {background-color: red; left:0px; top:0px;}
+}
+@keyframes example-2 {
+    0% {opacity: 0.5;}    
+    50%{opacity: 1; background-color: red;}
+    100%{opacity: 0.5;}
+}
+@keyframes example-3 {
+    0% {opacity: 0.5;}    
+    50%{opacity: 1; background-color: yellow;}
+    100%{opacity: 0.5;}
+}
+@keyframes example-4 {
+    0% {opacity: 0.5;}    
+    50%{opacity: 1; background-color: greenyellow;}
+    100%{opacity: 0.5;}
+}
+.hw2{
+    position: relative;
+    left: -800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.svetofor{
+    width: 100px;
+    /* position: relative; */
+    /* height: 900px; */
+    background-color: #555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.qizil{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    animation-name: example-2 ;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+.sariq{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    animation-name: example-3 ;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+.yashil{
+    width: 50px;
+    height: 50px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    animation-name: example-4 ;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+.stick{
+    width: 30px;
+    height: 70px;
+    background-color: #555;
+    
+}
